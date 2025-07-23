@@ -36,3 +36,38 @@ end
 for b in 0...5 # this doens't include 5
   puts "#{b} zombies incomming"
 end
+
+5.times do
+  puts "Hello party people"
+end
+
+5.upto(10){|num| print "#{num}" }
+puts ""
+10.downto(1){|num| print "#{num}"}
+
+puts""
+
+
+for c in 0...20
+  if c.odd?
+  puts c
+  end
+end
+
+puts""
+
+x = 0
+
+while x <= 10
+  if x == 3
+    x += 1
+    next
+  elsif x.odd?
+    puts x
+  end
+  x += 1
+end
+
+names = ["Dan", "Mike", "Joe"]
+
+names.each {|name| puts name } # using the 2 pipes around name is how we declare a var to store 'puts' results
